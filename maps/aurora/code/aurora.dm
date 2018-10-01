@@ -5,21 +5,19 @@
 
 	lobby_screens = list("aurora_asteroid", "aurora_postcard")
 
-	station_levels = list(3, 4, 5, 6, 7)
+	station_levels = list(3, 4, 5)
 	admin_levels = list(1)
-	contact_levels = list(3, 4, 5, 6)
-	player_levels = list(2, 3, 4, 5, 6, 7, 8)
-	accessible_z_levels = list("8" = 5, "9" = 10, "7" = 15, "2" = 60)
+	contact_levels = list(3, 4, 5)
+	player_levels = list(2, 3, 4, 5, 6)
+	accessible_z_levels = list("7" = 10, "6" = 15, "2" = 75)
 	base_turf_by_z = list(
 		"1" = /turf/space,
 		"2" = /turf/space,
-		"3" = /turf/space,
+		"3" = /turf/simulated/floor/asteroid/ash/rocky,
 		"4" = /turf/simulated/floor/asteroid/ash/rocky,
-		"5" = /turf/simulated/floor/asteroid/ash/rocky,
-		"6" = /turf/simulated/floor/asteroid/ash,
-		"7" = /turf/space,
-		"8" = /turf/space,
-		"9" = /turf/space
+		"5" = /turf/simulated/floor/asteroid/ash,
+		"6" = /turf/space,
+		"7" = /turf/space
 	)
 
 	station_name = "NSS Aurora"
@@ -72,7 +70,7 @@
 	new /datum/random_map/automata/cave_system/chasms(null,0,0,5,255,255)
 	new /datum/random_map/automata/cave_system/high_yield(null,0,0,5,255,255)
 	new /datum/random_map/automata/cave_system/chasms/surface(null,0,0,6,255,255)
-	
+
 	// Create the deep mining ore distribution map.
 	new /datum/random_map/noise/ore(null, 0, 0, 5, 64, 64)
 	new /datum/random_map/noise/ore(null, 0, 0, 4, 64, 64)
